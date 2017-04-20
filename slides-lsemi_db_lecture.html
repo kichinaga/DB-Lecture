@@ -27,11 +27,13 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-id="3bd82d1cca3349476fa99627cca66df7"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 238px; height: auto;" data-block-id="a011186a1d53ea9faf06dc8c88971406"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+				<section class="stack" data-id="d29014d3581eabcfa1faf66431759fc6"><section data-id="3bd82d1cca3349476fa99627cca66df7"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 238px; height: auto;" data-block-id="a011186a1d53ea9faf06dc8c88971406"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
 <h1>データベース</h1>
 
 <p>第１回</p>
-</div></div></section><section data-id="5b9515def9a62faefc0ebc99c85a4ce6"><div class="sl-block" data-block-type="text" style="width: 831px; left: 49px; top: 106px; height: auto;" data-block-id="a88fbaf1ed1afafaea25019b9d64bfea"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+</div></div></section><section data-id="5eb472def78b4bd732a222f3a4a67649"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="88c18483c675a0bcbcaeea817920abfa"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>https://github.com/kichinaga/DB-Lecture</h1>
+</div></div></section></section><section data-id="5b9515def9a62faefc0ebc99c85a4ce6"><div class="sl-block" data-block-type="text" style="width: 831px; left: 49px; top: 106px; height: auto;" data-block-id="a88fbaf1ed1afafaea25019b9d64bfea"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
 <h2>データベースとは</h2>
 </div></div>
 <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 200px; height: auto;" data-block-id="d8167a3c54cd0946e0f11a24782a085b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 12;">
@@ -117,7 +119,8 @@
 	 </li>
 	<li>Mac -- ターミナル<br>
 	/MAMP/Library/bin<br>
-	もしくは /Applications/MAMP/~</li>
+	もしくは</li>
+	<li>cd /Applications/MAMP/Library/bin</li>
 </ul>
 
 <p> </p>
@@ -129,8 +132,9 @@
 <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 200px; height: auto;" data-block-id="6901b90ab0340424582de738efaacbf0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11;">
 <ul>
 	<li>ログイン<br>
-	Win --- mysql -u [ユーザー名] -p<br>
-	Mac --- ./mysql ~<br>
+	Win --- mysql -u root -p<br>
+	Mac --- ./mysql -u root -p</li>
+	<li>password &gt; root<br>
 	 </li>
 	<li>終了<br>
 	exit;<br>
@@ -138,7 +142,7 @@
 	 </li>
 	<li>SQL文は最後に「;」を入力する</li>
 </ul>
-</div></div></section><section data-id="3bdb3a471d9397dcb034f1570dec33cf"><div class="sl-block" data-block-type="text" style="width: 831px; left: 49px; top: 106px; height: auto;" data-block-id="3f8c465401b8bcb4f9fce9fabd06071b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
+</div></div></section><section data-id="3bdb3a471d9397dcb034f1570dec33cf"><div class="sl-block" data-block-type="text" style="width: 831px; left: 80px; top: 106px; height: auto;" data-block-id="3f8c465401b8bcb4f9fce9fabd06071b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
 <h2>データ定義言語</h2>
 </div></div>
 <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 200px; height: auto;" data-block-id="e77ecf1a3cba9aa2a70cfd09deb665b4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11; line-height: 1.573;" data-has-line-height="">
@@ -167,7 +171,7 @@
 </div></div></section><section data-id="223278694a741f4907b4a741092cf6dd"><div class="sl-block" data-block-type="text" style="width: 831px; left: 49px; top: 106px; height: auto;" data-block-id="6b0c7e70f3332df90bd1218533611ea7"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
 <h2>データ定義言語</h2>
 </div></div>
-<div class="sl-block" data-block-type="text" style="width: 891px; left: 42px; top: 210px; height: auto;" data-block-id="5b97ee4ebc72ca7063cf2cee1e0276e9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11; line-height: 1.573;" data-has-line-height="">
+<div class="sl-block" data-block-type="text" style="width: 891px; left: 35px; top: 210px; height: auto;" data-block-id="5b97ee4ebc72ca7063cf2cee1e0276e9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11; line-height: 1.573;" data-has-line-height="">
 <p style="text-align:center">テーブル</p>
 
 <p style="text-align:center">※use [DB];で接続している場合は{}の中は入力しなくても良い</p>
@@ -254,7 +258,7 @@
 </div></div></section><section data-id="aeff5a789d5288cc3c0247c3995d7927"><div class="sl-block" data-block-type="text" style="width: 831px; left: 49px; top: 106px; height: auto;" data-block-id="645398df1eb8289d78b1280795a3f331"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
 <h2>データの詳細検索</h2>
 </div></div>
-<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 200px; height: auto;" data-block-id="cca6b4b689d8f208a16a740c8fe82551"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11;">
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 198px; height: auto;" data-block-id="cca6b4b689d8f208a16a740c8fe82551"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11;">
 <ul>
 	<li>SELECT [列名1] AS ~, [列名2], ... FROM [テーブル名] <br>
 	WHERE [条件]<br>
@@ -268,9 +272,10 @@
 <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 200px; height: auto;" data-block-id="5dddaeac1bdb89b860b29c0949c2f5cc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11;">
 <ul>
 	<li>グループ化</li>
+	<li> </li>
 	<li>集約関数
 	<ul>
-		<li>SUM([列名])</li>
+		<li>SUM([列名]) as ~</li>
 		<li>AVG([列名])</li>
 		<li>MIN([列名])</li>
 		<li>MAX([列名])</li>
@@ -299,6 +304,89 @@
 	</ul>
 	</li>
 </ul>
+</div></div></section><section data-id="51b0683abeef92a649b2480788b73a6b"><div class="sl-block" data-block-type="table" data-block-id="cbcf4d132181fc37151972b0f3ee63ac" style="height: auto; min-width: 120px; min-height: 30px; width: 800px; left: 81px; top: 70px;"><div class="sl-block-content" style="z-index: 11;" data-table-rows="10" data-table-cols="4" data-table-padding="10px"><table><tbody>
+<tr>
+<th style="padding: 10px;">ID</th>
+<th style="padding: 10px;">name</th>
+<th style="padding: 10px;">subject</th>
+<th style="padding: 10px;">score</th>
+</tr>
+<tr>
+<td style="padding: 10px;">1</td>
+<td style="padding: 10px;">aaa</td>
+<td style="padding: 10px;">c</td>
+<td style="padding: 10px;">75</td>
+</tr>
+<tr>
+<td style="padding: 10px;">2</td>
+<td style="padding: 10px;">bbb</td>
+<td style="padding: 10px;">java</td>
+<td style="padding: 10px;">100</td>
+</tr>
+<tr>
+<td style="padding: 10px;">3</td>
+<td style="padding: 10px;">aaa</td>
+<td style="padding: 10px;">java</td>
+<td style="padding: 10px;">60</td>
+</tr>
+<tr>
+<td style="padding: 10px;">4</td>
+<td style="padding: 10px;">ccc</td>
+<td style="padding: 10px;">swift</td>
+<td style="padding: 10px;">90</td>
+</tr>
+<tr>
+<td style="padding: 10px;">5</td>
+<td style="padding: 10px;">aaa</td>
+<td style="padding: 10px;">go</td>
+<td style="padding: 10px;">90</td>
+</tr>
+<tr>
+<td style="padding: 10px;">6</td>
+<td style="padding: 10px;">aaa</td>
+<td style="padding: 10px;">swift</td>
+<td style="padding: 10px;">45</td>
+</tr>
+<tr>
+<td style="padding: 10px;">7</td>
+<td style="padding: 10px;">bbb</td>
+<td style="padding: 10px;">go</td>
+<td style="padding: 10px;">30</td>
+</tr>
+<tr>
+<td style="padding: 10px;">8</td>
+<td style="padding: 10px;">ccc</td>
+<td style="padding: 10px;">java</td>
+<td style="padding: 10px;">75</td>
+</tr>
+<tr>
+<td style="padding: 10px;">9</td>
+<td style="padding: 10px;">bbb</td>
+<td style="padding: 10px;">c</td>
+<td style="padding: 10px;">50</td>
+</tr>
+</tbody></table></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="50965ed7ebd732c06763a024b49bf924" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 81px; top: 16px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>テーブル名：Test</p>
+</div></div></section><section data-id="2ab61a4edde934fcb913046fea85a199"><div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 140px;" data-block-id="b627d440957c40772ef36d10a23db463"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 99%;">
+<ol>
+	<li>
+	<h2 style="color:rgb(255, 255, 255)">テストの合計値が200以上の人の名前を表示<br>
+	 </h2>
+	</li>
+	<li>
+	<h2 style="color:rgb(255, 255, 255)">各人の名前と最低点を表示<br>
+	 </h2>
+	</li>
+	<li>
+	<h2 style="color:rgb(255, 255, 255)">各教科の名前と、その平均点を出力<br>
+	また、平均点の列名は「平均点」とする<br>
+	 </h2>
+	</li>
+	<li>
+	<h2 style="color:rgb(255, 255, 255)">JAVAをとっている人を名前昇順で表示</h2>
+	</li>
+</ol>
 </div></div></section>
 			</div>
 		</div>
@@ -306,7 +394,7 @@
 
 		
 <script>
-	var SLConfig = {"current_user":{"id":553479,"username":"t_yoshinaga","name":"Takumi Yoshinaga","description":"","thumbnail_url":"https://www.gravatar.com/avatar/08693d150834df658fcf856a817581ad?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":397598,"present_controls":false,"present_upsizing":true,"present_pointer":false,"present_notes":true,"editor_grid":true,"editor_snap":true,"developer_mode":true,"speaker_layout":"default","phone_number":null,"phone_country_code":null},"email":"t314093@m.chukyo-u.ac.jp","notify_on_receipt":true,"billing_address":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1},"deck":{"id":983760,"slug":"lsemi_db_lecture","title":"Database_Lecture","description":"データベースレクチャー","width":960,"height":700,"visibility":"all","published_at":"2017-04-20T00:46:55.031Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/23064c9cf9bf517c5a0f0afdfed7393b/thumb.jpg","view_count":0,"user":{"id":553479,"username":"t_yoshinaga","name":"Takumi Yoshinaga","description":"","thumbnail_url":"https://www.gravatar.com/avatar/08693d150834df658fcf856a817581ad?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":397598,"present_controls":false,"present_upsizing":true,"present_pointer":false,"present_notes":true}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"overpass2","theme_color":"grey-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"should_loop":false,"share_notes":false,"slide_number":true,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1492667196813,"font_typekit":null,"font_google":null,"notes":{}}};
+	var SLConfig = {"current_user":{"id":553479,"username":"t_yoshinaga","name":"Takumi Yoshinaga","description":"","thumbnail_url":"https://www.gravatar.com/avatar/08693d150834df658fcf856a817581ad?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":397598,"present_controls":false,"present_upsizing":true,"present_pointer":false,"present_notes":true,"editor_grid":true,"editor_snap":true,"developer_mode":true,"speaker_layout":"default","phone_number":null,"phone_country_code":null},"email":"t314093@m.chukyo-u.ac.jp","notify_on_receipt":true,"billing_address":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1},"deck":{"id":983760,"slug":"lsemi_db_lecture","title":"Database_Lecture","description":"データベースレクチャー","width":960,"height":700,"visibility":"all","published_at":"2017-04-20T00:46:55.031Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/23064c9cf9bf517c5a0f0afdfed7393b/thumb.jpg","view_count":0,"user":{"id":553479,"username":"t_yoshinaga","name":"Takumi Yoshinaga","description":"","thumbnail_url":"https://www.gravatar.com/avatar/08693d150834df658fcf856a817581ad?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":397598,"present_controls":false,"present_upsizing":true,"present_pointer":false,"present_notes":true}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"overpass2","theme_color":"grey-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"should_loop":false,"share_notes":false,"slide_number":true,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1492676153826,"font_typekit":null,"font_google":null,"notes":{}}};
 </script>
 
 		<script>
