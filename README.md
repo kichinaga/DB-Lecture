@@ -1,2 +1,4 @@
 # DB-Lecture
-LSemi データベースレクチャー
+LSemi  
+データベースレクチャー  
+PHPレクチャー
