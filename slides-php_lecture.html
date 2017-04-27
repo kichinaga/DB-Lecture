@@ -253,28 +253,16 @@ function '関数名'(仮引数){
 ?&gt;</code></pre></div></div></section><section data-id="923c7f732dcef8981e42336f6e1aff32"><div class="sl-block" data-block-type="text" style="width: 831px; left: 49px; top: 70px; height: auto;" data-block-id="399cc5662ff6c74258dc6d86ad7349ff"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
 <h2>MySQLの利用</h2>
 </div></div>
-<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 171px; height: auto;" data-block-id="5c555d4228ab44a8334d8513be87bdba"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11;">
-<ul>
-	<li>MySQLへの接続
-	<ul>
-		<li>$link = mysqli_connect(“ホスト名”, ”ユーザ名”, ”パスワード”);<br>
-		※引数（'localhost', 'root', root')でいけます<br>
-		 </li>
-	</ul>
-	</li>
-	<li>データベースの選択
-	<ul>
-		<li>$DB = mysqli_select_db(“DB名”, $link);<br>
-		 </li>
-	</ul>
-	</li>
-	<li>SQL文の実行
-	<ul>
-		<li>$res = mysqli_query($link, “SQL文”);</li>
-	</ul>
-	</li>
-</ul>
-</div></div></section><section data-id="0f11d12174b4bfdf1d55bd20a5cc0b50"><div class="sl-block" data-block-type="text" style="width: 831px; left: 49px; top: 70px; height: auto;" data-block-id="23fdc23c60c1ee940507f578d0085327"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 171px; height: auto;" data-block-id="5c555d4228ab44a8334d8513be87bdba"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11;" dir="ui"><ul>
+<li>MySQLへの接続<ul><li>$link = mysqli_connect(“ホスト名”, ”ユーザ名”, ”パスワード”);<br>※引数（'localhost', 'root', root')でいけます<br><br>
+</li></ul>
+</li>
+<li>データベースの選択<ul><li>$DB = mysqli_select_db($link, <span style="color:rgb(255, 255, 255)">“DB名”</span>);<br>
+</li></ul>
+</li>
+<li>SQL文の実行<ul><li>$res = mysqli_query($link, “SQL文”);</li></ul>
+</li>
+</ul></div></div></section><section data-id="0f11d12174b4bfdf1d55bd20a5cc0b50"><div class="sl-block" data-block-type="text" style="width: 831px; left: 49px; top: 70px; height: auto;" data-block-id="23fdc23c60c1ee940507f578d0085327"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
 <h2>MySQLの利用</h2>
 </div></div>
 <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 171px; height: auto;" data-block-id="b1ee87bf5757f45d3caf84a55a11c41d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11;">
@@ -331,7 +319,7 @@ function '関数名'(仮引数){
 
 		
 <script>
-	var SLConfig = {"current_user":{"id":553479,"username":"t_yoshinaga","name":"Takumi Yoshinaga","description":"","thumbnail_url":"https://www.gravatar.com/avatar/08693d150834df658fcf856a817581ad?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":397598,"present_controls":false,"present_upsizing":true,"present_pointer":false,"present_notes":true,"editor_grid":true,"editor_snap":true,"developer_mode":true,"speaker_layout":"default","phone_number":null,"phone_country_code":null},"email":"t314093@m.chukyo-u.ac.jp","notify_on_receipt":true,"billing_address":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1},"deck":{"id":989651,"slug":"php_lecture","title":"PHP Lecture","description":"","width":960,"height":700,"visibility":"all","published_at":"2017-04-26T15:16:34.879Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/651da960505707a489ca2edf31bab910/thumb.jpg","view_count":0,"user":{"id":553479,"username":"t_yoshinaga","name":"Takumi Yoshinaga","description":"","thumbnail_url":"https://www.gravatar.com/avatar/08693d150834df658fcf856a817581ad?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":397598,"present_controls":false,"present_upsizing":true,"present_pointer":false,"present_notes":true}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"grey-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"should_loop":false,"share_notes":false,"slide_number":true,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1493276532515,"font_typekit":null,"font_google":null,"notes":{}}};
+	var SLConfig = {"current_user":{"id":553479,"username":"t_yoshinaga","name":"Takumi Yoshinaga","description":"","thumbnail_url":"https://www.gravatar.com/avatar/08693d150834df658fcf856a817581ad?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":397598,"present_controls":false,"present_upsizing":true,"present_pointer":false,"present_notes":true,"editor_grid":true,"editor_snap":true,"developer_mode":true,"speaker_layout":"default","phone_number":null,"phone_country_code":null},"email":"t314093@m.chukyo-u.ac.jp","notify_on_receipt":true,"billing_address":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1},"deck":{"id":989651,"slug":"php_lecture","title":"PHP Lecture","description":"","width":960,"height":700,"visibility":"all","published_at":"2017-04-26T15:16:34.879Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/651da960505707a489ca2edf31bab910/thumb.jpg","view_count":0,"user":{"id":553479,"username":"t_yoshinaga","name":"Takumi Yoshinaga","description":"","thumbnail_url":"https://www.gravatar.com/avatar/08693d150834df658fcf856a817581ad?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":397598,"present_controls":false,"present_upsizing":true,"present_pointer":false,"present_notes":true}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"grey-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"should_loop":false,"share_notes":false,"slide_number":true,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1493277407641,"font_typekit":null,"font_google":null,"notes":{}}};
 </script>
 
 		<script>
