@@ -29,6 +29,8 @@
 			<div class="slides">
 				<section data-id="550e35f2ec0830defe6878debd4ad4dd"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 238px; height: auto;" data-block-id="8b982d12b3dafc9d67c624dc53b7f494"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
 <h1>PHPレクチャー</h1>
+</div></div></section><section data-id="62f031c4014507fac8e11969fe4b6f23"><div class="sl-block" data-block-type="text" style="width: 806px; left: 74px; top: 179px; height: auto;" data-block-id="2394a85102bb4e0f87a19a9a8e4c2ed7"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>https://github.com/kichinaga/DB-Lecture</h1>
 </div></div></section><section data-id="5a97da823966699b21ca2452ffab6027"><div class="sl-block" data-block-type="text" style="width: 831px; left: 49px; top: 70px; height: auto;" data-block-id="a5b82b70e3e592779ddc920a0bf362cb"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
 <h2>PHPとは</h2>
 </div></div>
@@ -289,14 +291,47 @@ function '関数名'(仮引数){
 	</ul>
 	</li>
 </ul>
-</div></div></section><section data-id="573392f6a845ae98f936c027fc24dc30" data-background-image="https://s3.amazonaws.com/media-p.slid.es/uploads/553479/images/3743299/__________2017-04-27_3.19.14.png" data-background-color="rgb(108,108,108)" data-background-size="contain"></section><section data-id="8a8cfc0e3aebd53288f509640111feeb" data-background-image="https://s3.amazonaws.com/media-p.slid.es/uploads/553479/images/3743302/__________2017-04-27_3.19.36.png" data-background-color="rgb(10,10,10)" data-background-size="contain"></section>
+</div></div></section><section data-id="952abb5aaa84554c2c09aa103bf7e19d"><div class="sl-block" data-block-type="text" style="width: 831px; left: 49px; top: 70px; height: auto;" data-block-id="6f3b3815701da75938b6c9cd2d282636"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+<h2>(New) isset関数</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 812px; left: 80px; top: 191px; height: auto;" data-block-id="4bf1f9121005720bced51b51991a42c3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 12;">
+<p> </p>
+
+<p>isset(引数)で使用可能</p>
+
+<p>引数がnullでないことを検証する(nullでなければtrueを返す)</p>
+</div></div>
+<div class="sl-block" data-block-type="code" data-block-id="fbcb15864ebf941ad79cd6d472021967" style="min-width: 30px; min-height: 30px; width: 560px; height: 215px; left: 160px; top: 383px;"><div class="sl-block-content" style="z-index: 13; font-size: 133%;"><pre class="dust"><code>&lt;?php
+  $name = '名前';
+  if(isset($name)){
+    echo $name;
+  } else {
+    echo '入力がありません';
+  }
+?&gt;</code></pre></div></div></section><section data-id="3c0a97341eff0436a249bc8ce12f819a"><div class="sl-block" data-block-type="text" style="width: 831px; left: 49px; top: 70px; height: auto;" data-block-id="9e2eab0449704ad2fc683b7096e1f888"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+<h2>(New)文字列中の式展開</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 810px; left: 80px; top: 191px; height: auto;" data-block-id="34967a4dc2d466d18b87e0c98471fcaf"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 12;">
+<p> </p>
+
+<p>ダブルクオーテーション("")の中で</p>
+
+<p>" ${$name} "のように記述すると、変数の中身が表示される</p>
+
+<p>シングルクオーテーション('')では表示されない。</p>
+</div></div>
+<div class="sl-block" data-block-type="code" data-block-id="f19d4876753ba83e9d8ae93e92fc9787" style="min-width: 30px; min-height: 30px; width: 640px; height: 210px; left: 160px; top: 420px;"><div class="sl-block-content" style="z-index: 13; font-size: 160%;"><pre class="dust"><code>&lt;?php
+  $name = "namae";
+  echo "名前 : ${$name} ";
+  // 出力 : 名前 : namae 
+?&gt;</code></pre></div></div></section><section data-id="573392f6a845ae98f936c027fc24dc30" data-background-image="https://s3.amazonaws.com/media-p.slid.es/uploads/553479/images/3743299/__________2017-04-27_3.19.14.png" data-background-color="rgb(108,108,108)" data-background-size="contain"></section><section data-id="8a8cfc0e3aebd53288f509640111feeb" data-background-image="https://s3.amazonaws.com/media-p.slid.es/uploads/553479/images/3743302/__________2017-04-27_3.19.36.png" data-background-color="rgb(10,10,10)" data-background-size="contain"></section>
 			</div>
 		</div>
 
 
 		
 <script>
-	var SLConfig = {"current_user":{"id":553479,"username":"t_yoshinaga","name":"Takumi Yoshinaga","description":"","thumbnail_url":"https://www.gravatar.com/avatar/08693d150834df658fcf856a817581ad?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":397598,"present_controls":false,"present_upsizing":true,"present_pointer":false,"present_notes":true,"editor_grid":true,"editor_snap":true,"developer_mode":true,"speaker_layout":"default","phone_number":null,"phone_country_code":null},"email":"t314093@m.chukyo-u.ac.jp","notify_on_receipt":true,"billing_address":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1},"deck":{"id":989651,"slug":"php_lecture","title":"PHP Lecture","description":"","width":960,"height":700,"visibility":"all","published_at":"2017-04-26T15:16:34.879Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/651da960505707a489ca2edf31bab910/thumb.jpg","view_count":0,"user":{"id":553479,"username":"t_yoshinaga","name":"Takumi Yoshinaga","description":"","thumbnail_url":"https://www.gravatar.com/avatar/08693d150834df658fcf856a817581ad?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":397598,"present_controls":false,"present_upsizing":true,"present_pointer":false,"present_notes":true}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"grey-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"should_loop":false,"share_notes":false,"slide_number":true,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1493254507610,"font_typekit":null,"font_google":null,"notes":{}}};
+	var SLConfig = {"current_user":{"id":553479,"username":"t_yoshinaga","name":"Takumi Yoshinaga","description":"","thumbnail_url":"https://www.gravatar.com/avatar/08693d150834df658fcf856a817581ad?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":397598,"present_controls":false,"present_upsizing":true,"present_pointer":false,"present_notes":true,"editor_grid":true,"editor_snap":true,"developer_mode":true,"speaker_layout":"default","phone_number":null,"phone_country_code":null},"email":"t314093@m.chukyo-u.ac.jp","notify_on_receipt":true,"billing_address":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1},"deck":{"id":989651,"slug":"php_lecture","title":"PHP Lecture","description":"","width":960,"height":700,"visibility":"all","published_at":"2017-04-26T15:16:34.879Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/651da960505707a489ca2edf31bab910/thumb.jpg","view_count":0,"user":{"id":553479,"username":"t_yoshinaga","name":"Takumi Yoshinaga","description":"","thumbnail_url":"https://www.gravatar.com/avatar/08693d150834df658fcf856a817581ad?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":397598,"present_controls":false,"present_upsizing":true,"present_pointer":false,"present_notes":true}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"grey-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"should_loop":false,"share_notes":false,"slide_number":true,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1493276532515,"font_typekit":null,"font_google":null,"notes":{}}};
 </script>
 
 		<script>
